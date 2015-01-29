@@ -20,9 +20,10 @@ If things are still not working, try the following:
 
 *   Error : ENOSPC displayed. Camera is probably running out of GPU memory. Check `config.txt` in the /boot/ folder. The gpu_mem option should be at least 128. Alternatively, use the Memory Split option in the Advanced section of `raspi-config` to set this.
 
-*   If after all the above the camera is still not working, you may need to upgrade the firmware on the Raspberry Pi. Use the following command to get the very latest (but experimental) firmware.
+*   If after all the above the camera is still not working, you may need to upgrade the firmware on the Raspberry Pi. Use the following commands to get the very latest stable firmware.
 
 ```
-sudo rpi-update
+sudo apt-get update
+sudo apt-get dist-upgrade
 ```
 *   If after trying all the above the camera still does not work, it may be defective; have you been careful not to expose it to static shock? Try posting on the [Raspberry Pi forum (Camera section)](http://www.raspberrypi.org/forum/viewforum.php?f=43) to see if there is any more help available there. Failing that, it may need replacing. 
